@@ -30,13 +30,13 @@ const resolvers = {
             const user = await User.findOne({email});
 
             if(!user) {
-                throw new AuthenticationError('Incorrect credentials');
+                throw new AuthenticationError('Wrong credentials');
             }
 
             const correctPw = await user.isCorrectPassword(password);
 
             if(!correctPw) {
-                throw new AuthenticationError('Incorrect credentials');
+                throw new AuthenticationError('Wrong credentials');
             }
 
             const token = signToken(user);
