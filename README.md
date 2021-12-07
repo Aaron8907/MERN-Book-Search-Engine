@@ -12,7 +12,7 @@ Online book search engine using MERN
 ## Usage
 - Look up any book
 - Login/Sign up
-- Save favoite books
+- Save favorite books
 
 
 ## Installation
